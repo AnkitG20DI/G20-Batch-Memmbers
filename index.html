@@ -3,79 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>G20 Team</title>
+    <title>G20 Batch Members</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
             background-color: #f4f4f4;
-        }
-        .header {
-            background-color: purple;
-            color: white;
             text-align: center;
             padding: 20px;
-            font-size: 24px;
-            font-weight: bold;
         }
         .container {
-            max-width: 800px;
-            background: #dfffd6;
+            max-width: 600px;
+            margin: auto;
+            background: white;
             padding: 20px;
-            margin: 20px auto;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
-            text-align: center;
         }
         h2 {
-            color: black;
+            color: #333;
         }
-        .team-members {
+        .email {
+            font-size: 18px;
+            color: #555;
+        }
+        .time {
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: #888;
+        }
+        .members {
             list-style: none;
             padding: 0;
         }
-        .team-members li {
-            background: white;
-            margin: 10px 0;
-            padding: 10px;
-            border-radius: 5px;
-            font-size: 18px;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
-        .footer {
-            background-color: #333;
+        .members li {
+            background: #007bff;
             color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 20px;
-        }
-        .footer a {
-            color: yellow;
-            text-decoration: none;
-            font-weight: bold;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        Welcome to Our DEVOPS INSIDERS G20 Team Page
-    </div>
-
     <div class="container">
-        <h2>Team Members</h2>
-        <ul class="team-members">
-            <li>PARTOSH PANY</li>
-            <li>ANKIT TYAGI</li>
-            <li>HARSH VARDHAN</li>
-            <li>GAURAV GUPTA</li>
-            <li>SHILPA CHOUDHURY</li>
+        <h2>G20 Batch Members</h2>
+        <p class="email">aktyagi2012@gmail.com</p>
+        <p class="time" id="current-time"></p>
+        <ul class="members">
+            <li>Ankit Tyagi</li>
+            <li>Paritosh</li>
+            <li>Harshwardhan</li>
+            <li>Chanchal</li>
+            <li>Mayank</li>
+            <li>Shilpa</li>
+            <li>Kapil</li>
+            <li>Bhawesh</li>
+            <li>Shalini</li>
+            <li>Gaurav</li>
+            <li>Jagseer</li>
+            <li>Manjeet</li>
         </ul>
     </div>
 
-    <div class="footer">
-        Group Name: G20 DEVOPS INSIDERS <br>
-        LinkedIn: <a href="#">Visit our LinkedIn</a>
-    </div>
+    <script>
+        function updateTime() {
+            let now = new Date();
+            let timeString = now.toLocaleString();
+            document.getElementById("current-time").innerText = "Current Time: " + timeString;
+        }
+        updateTime();
+        setInterval(updateTime, 1000);
+    </script>
 </body>
 </html>
