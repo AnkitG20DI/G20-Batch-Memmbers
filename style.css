@@ -1,0 +1,68 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+}
+
+/* Video Styling */
+.video-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Member Styling */
+.members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.member {
+    background: #e3f2fd;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #90caf9;
+}
+
+.member-name {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Gender-based Images */
+.male img {
+    border-color: #42a5f5;
+}
+.female img {
+    border-color: #f06292;
+}
